@@ -1,0 +1,109 @@
+/* VARIABLES */
+/* COLORS */
+/* FONT */
+/* FONT WEIGHT */
+/* MARGENES BOTTOM */
+/* Z-INDEX */
+/* HOVER OVERLAY */
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* SUB-CLASSES CSS EXEAMPLE */
+.section {
+  padding: 4.5rem 0 2.5rem;
+}
+
+.section__title {
+  font-size: 1.25rem;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+.showMenu {
+  right: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: transparent;
+  transition: var(--img-transition);
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo,
+.nav__toggle {
+  color: var(--white-color);
+}
+
+.nav__logo {
+  font-size: var(--h2-font-size);
+}
+
+.nav__toggle {
+  font-size: var(--mb-1-5);
+}
+
+.nav__menu {
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    background-color: var(--white-color);
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    box-shadow: 1px 0 4px var(--gray-color);
+    padding: var(--mb-2);
+    transition: 0.35s;
+  }
+  .nav__toggle {
+    margin-right: var(--mb-1);
+  }
+  .nav__logo {
+    margin-left: var(--mb-1);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
